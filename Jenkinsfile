@@ -2,7 +2,7 @@ node {
     sh 'echo hello world'
 	
 	//定义mvn环境
-    def mvnHome = tool 'M3'
+    def mvnHome = 'tool M3'
     env.PATH = "${mvnHome}/bin:${env.PATH}"
 
     stage('mvn test'){
